@@ -12,7 +12,7 @@ int tiempo = 1000;
 void setup() {
   Serial.begin(9600);
   
-  pinMode(derechaB, INPUT);		// todos los pines como salida
+  pinMode(derechaB, INPUT);		
   pinMode(izquierdaB, INPUT);
    
   pinMode(derechaB, LOW);
