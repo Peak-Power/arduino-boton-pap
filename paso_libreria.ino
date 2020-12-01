@@ -6,6 +6,7 @@ int izquierdaB = 9;
 int estadoBotonD;
 int estadoBotonI;
 int led =8;
+int led2 =10;
 int tiempo = 1000;
 int demora = 11;   		// demora entre pasos, no debe ser menor a 10 ms.
 
@@ -31,17 +32,19 @@ void loop() {
          if(estadoBotonD == HIGH){
     
         digitalWrite(led,HIGH);
+        digitalWrite(led2,LOW);
         motor.step(2048); // cantidad de pasos.
         delay(tiempo);
     
       } if (estadoBotonI == HIGH){
         
+        digitalWrite(led2,HIGH);
         digitalWrite(led,LOW);
         motor.step(-2048); // cantidad de pasos.
         delay(tiempo);
         
     }if ((estadoBotonD == HIGH) && (estadoBotonI == HIGH)){
       
-      Serial.println("Error Diseño");
+      Serial.println("Error DiseÃ±o");
   }
 }
