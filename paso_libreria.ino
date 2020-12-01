@@ -8,8 +8,6 @@ int estadoBotonI;
 int led =8;
 int led2 =10;
 int tiempo = 1000;
-int demora = 11;   		// demora entre pasos, no debe ser menor a 10 ms.
-
 
 void setup() {
   Serial.begin(9600);
