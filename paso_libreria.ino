@@ -42,6 +42,6 @@ void loop() {
         
     }if ((estadoBotonD == HIGH) && (estadoBotonI == HIGH)){
       
-      Serial.println("Error");
+      Serial.println("Error Diseño");
   }
 }
